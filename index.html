@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="https://feeldreams.github.io/heihbd/style.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<head>
+  <title>HAPPY BIRTHDAY</title>
+  <link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
+  <meta name="description" content="HTML Bucin Malas.id">
+  <style>
+    html { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: inherit; }
+    body { margin: 0; min-height: 100vh; overflow-x: hidden; background-color: #000; }
+    #Content { width: 100%; max-width: 520px; margin: 0 auto; padding: 0 16px 32px; }
+    
+    /* Perbaikan Tampilan Wallpaper */
+    #bodyblur { position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100vh; z-index: -1; }
+    #wallpaper { width: 100%; height: 100%; object-fit: cover; transition: all 1.3s ease; }
+    
+    img { max-width: 100%; height: auto; display: block; }
+    .kumpulanstiker { gap: 10px; justify-content: center; }
+    #kolombaru { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; }
+    #kolombaru li { list-style: none; padding: 12px; margin: 0; font-size: 2rem; cursor: pointer; }
+    #Tombol, #opsL { width: 100%; text-align: center; }
+    #Tombol a { display: inline-block; width: auto; max-width: 100%; padding: 14px 22px; }
+    blockquote { padding: 14px; }
+    
+    /* Style Foto Bulat (Opsional) */
+    .foto-bulat {
+      width: 110px !important;
+      height: 110px !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+      border: 3px solid #fff;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 500px) {
+      #Content { padding: 0 12px 26px; }
+      #ket, #pesan1, #pesan2, #pesan3, #pesan4, #pesan5, #pesan6, #pesan7, #pesan8, #pesan9, #pesan10 { font-size: 0.95rem; }
+      #kolombaru li { font-size: 1.8rem; padding: 10px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Audio -->
+  <audio src="Pamungkas - Happy Birthday To You (Official Lyrics Video) (128).mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper -->
+    <img src="balon.jpeg" id="wallpaper" />
+    <div id="beneranblur"></div>
+  </div>
+
+  <div id='Content'>
+
+    <div id="kadoIn">
+      <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png" />
+    </div>
+    <p id="ket">KLIK KADONYA!!!!!</p>
+
+    <div class="kumpulanstiker">
+      <!-- Stiker untuk Konten -->
+      <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker" />
+      <img src="https://feeldreams.github.io/pusn.gif" id="fotostiker1" />
+      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker2" />
+      <img src="https://feeldreams.github.io/cilukba.gif" id="fotostiker3" />
+      <img src="https://feeldreams.github.io/pandakuning.gif" id="fotostiker4" />
+      <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker5" />
+      <img src="https://feeldreams.github.io/pandacoklat.gif" id="fotostiker6" />
+    </div>
+
+    <p id="halo" class="halo"></p>
+
+    <div>
+      <blockquote id='bq' data-text='㋡'>
+        <p id="kalimat">I have a few words for my older sister. </p>
+
+        <p id="pesan1">KLIK 4 LOVE DIBAWAH </p>
+        <div id="kolombaru">
+          <li id="lv1">🤍</li>
+          <li id="lv2">🤍</li>
+          <li id="lv3">🤍</li>
+          <li id="lv4">🤍</li>
+        </div>
+
+        <p id="pesan2">Tunggu...</p>
+        <!-- Pesan -->
+        <p id="pesan3">Pergi ke kuburan lalu membakar dupa<br>Dalam kuburan tidak ada sumur<br>Tidak bisa aku memberi apa-apa<br>Selain ucapan semoga panjang umur</p>
+        <p id="pesan4">Happy Birthday Kak</p>
+        <p id="pesan5" class="gaya2">Selamat bertambah usia, Kakakku tersayang.</p>
+        <p id="pesan6" class="gaya2">Terima kasih sudah sabar menghadapiku dan selalu ada di setiap fase terendah dalam hidupku.</p>
+        <p id="pesan7" class="gaya2">Aku sangat bersyukur dianugerahi saudari sepertimu</p>
+        <p id="pesan8" class="gaya2">Hehehe aku lum bise berik ape ape kak:v</p>
+        <p id="pesan9" class="gaya2">Barakallah fii umrik, Kakakku tercinta. Semoga Allah senantiasa melimpahkan rahmat, kesehatan, dan keberkahan di setiap detik usiamu. Semoga kita bisa terus bersama hingga kelak dipertemukan kembali di surga-Nya.</p>
+        <p id="pesan10" class="gaya2">HAPPY LEVEL UP DAY YAH KAK ALL THE BEST</p>
+
+        <!-- Tombol Lanjut -->
+        <p id="opsL">Klik Disini</p>
+      </blockquote>
+    </div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
+
+    <!-- Pesan Tambahan -->
+    <p id="katatambahan" class="sembunyi">Kado nye nyusul 4 tahun kedepan kak ye 😜</p>
+
+    <!-- Pesan Ditolak -->
+    <div id="pesanditolak">
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />
+      <p id="kataditolak"> Pokok nya harus di terima😜</p>
+    </div>
+
+  </div>
+
+  <script>
+    const body = document.querySelector("body"); const swalst = Swal.mixin({timer: 2300, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90, }); audio = new Audio('' + linkmp3.src); ftganti = 0; fungsi = 0; fungsiAwal = 0; deffotostiker = fotostiker.src; function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-snowflake"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-snowflake"); if (heartArr.length > 100) {heartArr[0].remove()} }, 100); Content.style = "opacity:1;margin-top:16vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80, });
+
+    document.getElementById("kadoIn").onclick = function () {if (fungsiAwal == 0) {audio.play(); fungsiAwal = 1; kadoIn.style = "transition:all .8s ease;transform:scale(10);opacity:0"; wallpaper.style = "transform: scale(1.5);"; ket.style = "display:none"; setTimeout(initengahan, 300); setTimeout(inipesan, 500)} }
+
+    async function inipesan() {
+      var {value: nama} = await swals.fire({
+        title: 'Masukin Nama Kamu', input: 'text',
+      });
+      if (nama && nama.length < 11) {
+        window.nama = nama;
+        vketikhalo = "Hai, " + nama + " ✨";
+        mulainama();
+      } else {
+        await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!'); inipesan();
+      }
+    }
+
+    var tanya = 'Dak usa kado la kak ye hehehe? 😶❤️';
+    var opstanya = 'Ayo jawab 😆';
+    var tompositif = 'iye';
+    var tomnegatif = 'Endak';
+
+    async function menuju() {pesanwhatsapp = "Makasii udah ngucapin " + nama + " ultah ><"; await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success'); window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+  </script>
+  <script src="https://malasid.github.io/html/hbd.js"></script>
+</body>
+
+</html>
